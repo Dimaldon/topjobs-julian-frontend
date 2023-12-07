@@ -1,0 +1,38 @@
+.header__nav {
+	margin-top: 1.5em;
+}
+
+.header__nav ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.header__nav ul li {
+	display: block;
+	padding: 4px 8px;
+}
+
+.header__nav ul li a.header__nav__link {
+	color: #000;
+	text-decoration: none;
+	font-size: 1.8em;
+}
+
+.header__nav ul li a.header__nav__link.active {
+	text-decoration: underline;
+}
+
+.header__nav__link {
+	width: auto;
+}
+
+@media screen and (min-width: 940px) {
+	.header__nav {
+		margin-top: 0;
+	}
+
+	.header__nav ul li a.header__nav__link {
+		font-size: 1em;
+	}
+}
