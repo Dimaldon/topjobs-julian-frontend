@@ -1,0 +1,75 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: space-between;
+	border-top: 4px solid #6537fb;
+	margin: 0.5em 0.2em;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	box-shadow: 0 0 4px gainsboro;
+	transition: all 0.2s ease-in;
+}
+
+.card:hover {
+	cursor: auto;
+	box-shadow: 0 0 8px rgb(145, 144, 144);
+}
+
+.card__header {
+	padding: 0.2em 0.8em;
+	border-bottom: 1px solid black;
+	background-color: #fdfdfd;
+}
+
+.card__header h2 {
+	font-size: 1em;
+	margin: 4px 0;
+}
+
+.card__content {
+	padding: 0 0.8em;
+	background-color: white;
+}
+
+.card__content__row {
+	display: flex;
+	padding: 0.5em 0;
+	font-size: 1em;
+}
+
+.card__content__row-subject {
+	font-weight: bold;
+}
+
+.card__content__row-value {
+	text-justify: auto;
+}
+
+.card__footer {
+	padding-top: 0.8em;
+}
+
+.card__footer a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	background-color: #6537fb;
+	width: 100%;
+	padding: 15px 0;
+	color: white;
+}
+
+.card__footer button:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 940px) {
+	.card {
+		width: 28%;
+		display: flex;
+		flex-direction: column;
+	}
+}

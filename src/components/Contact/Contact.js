@@ -1,5 +1,9 @@
 import "./Contact.css";
 function Contact() {
+	const enviaForma = (e) => {
+		e.preventDefault();
+		alert("Gracias por contactarnos");
+	};
 	return (
 		<main className="content">
 			<h1>Contacto</h1>
@@ -15,6 +19,9 @@ function Contact() {
 				<div className="content__row">
 					<label>Mensaje</label>
 					<textarea></textarea>
+				</div>
+				<div className="content__row">
+					<button onClick={enviaForma}>Enviar</button>
 				</div>
 			</form>
 		</main>

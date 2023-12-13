@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
 import Contact from "../Contact/Contact";
+import Empleos from "../Empleos/Empleos";
 // import api from '../utils/api';
 import { Route, Routes } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path="/" element={<Main />}></Route>
+				<Route path="/Empleos" element={<Empleos />}></Route>
 				<Route path="/Contacto" element={<Contact />}></Route>
 			</Routes>
 			<Footer />

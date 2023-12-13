@@ -6,14 +6,43 @@
 	margin: 2em 1.5em;
 }
 
-.content h1 {
-	font-size: 1.5em;
-	font-weight: normal;
-	text-align: center;
+.content form {
+	width: 100%;
+	background-color: #c4b6ff;
+	border-radius: 12px;
+	padding: 12px;
+	border: 1px solid #7a7a7a;
+	box-shadow: 0 0 5px #7a7a7a;
+}
+.content__row {
+	display: flex;
+	flex-direction: column;
+	margin: 18px 0;
 }
 
-.content img {
-	width: 100%;
+.content__row label {
+	margin-bottom: 6px;
+}
+
+.content__row input,
+.content__row textarea {
+	border-radius: 4px;
+	border: 1px solid gray;
+	padding: 6px;
+	resize: none;
+}
+
+.content__row button {
+	color: white;
+	border-radius: 4px;
+	padding: 12px;
+	font-size: 18px;
+	border: none;
+	background-color: #7d55ff;
+}
+
+.content__row button:hover {
+	cursor: pointer;
 }
 
 @media screen and (min-width: 940px) {
@@ -31,5 +60,9 @@
 
 	.content img {
 		width: auto;
+	}
+
+	.content form {
+		width: 400px;
 	}
 }
